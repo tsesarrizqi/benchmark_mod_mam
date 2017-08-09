@@ -1,0 +1,78 @@
+<?xml version="1.0"?><tsung loglevel="notice">
+
+  <clients>
+    <client host="localhost" use_controller_vm="true"/>
+  </clients>
+
+  <servers>
+  <server host="ejabberd_aws" port="5222" type="tcp"/>
+ </servers>
+
+<monitoring>
+  <monitor host="ejabberd_aws" type="erlang"/></monitoring>
+
+<load>
+   <arrivalphase phase="1" duration="1" unit="minute">
+    <users interarrival="0.6" unit="second"/>
+   </arrivalphase>
+  </load>
+
+  <options>
+  <option type="ts_jabber" name="global_number" value="1000"/>
+  <option type="ts_jabber" name="userid_max" value="2000"/>
+  <option type="ts_jabber" name="domain" value="ec2-52-68-122-111.ap-northeast-1.compute.amazonaws.com"/>
+  <option type="ts_jabber" name="username" value="user"/>
+  <option type="ts_jabber" name="passwd" value="pass"/>
+ </options>
+
+  <sessions>
+   
+
+   <session probability="100" name="jabber-example" type="ts_jabber">
+    
+    <request> <jabber type="connect" ack="no_ack"/> </request>
+    
+    <thinktime value="2"/>
+    
+    <transaction name="authenticate">
+      <request> <jabber type="auth_get" ack="local"/> </request>
+      <request> <jabber type="auth_set_plain" ack="local"/> </request>
+    </transaction>
+
+    <request> <jabber type="presence:initial" ack="no_ack"/> </request>
+
+  <thinktime value="5"/>
+
+        <for from="1" to="100" incr="1" var="j">
+           <request subst="true">
+              <jabber type="chat" ack="no_ack" size="50" destination="online"/>
+           </request>
+           <thinktime value="5"/>
+        </for>
+
+        <transaction name="mam_paging">
+        <setdynvars sourcetype="value" value="">
+          <var name="after_elem"/>
+        </setdynvars>
+        <repeat name="paginating_forward" max_repeat="10">
+          <request subst="true" tag="paging">
+            <dyn_variable name="last_message_id" re="&lt;last>(.*)&lt;/last>"/>
+            <jabber type="raw" ack="parse" regexp="&lt;/iq>" data="&lt;![CDATA[                   &lt;iq type='get'>                     &lt;query xmlns='urn:xmpp:mam:tmp'>                       &lt;set xmlns='http://jabber.org/protocol/rsm'>                          &lt;max>1&lt;/max>                          %%_after_elem%%                       &lt;/set>                     &lt;/query>                   &lt;/iq>                 ]]>">
+            </jabber>
+          </request>
+          <setdynvars sourcetype="value" value="               &lt;![CDATA[                 &lt;after>%%_last_message_id%%&lt;/after>               ]]>">
+            <var name="after_elem"/>
+          </setdynvars>
+          <until var="last_message_id" eq=""/>
+        </repeat>
+        </transaction>
+<thinktime value="5"/>
+
+    <transaction name="close">
+      <request> <jabber type="close" ack="no_ack"/> </request>
+    </transaction>
+  </session>
+
+
+ </sessions>
+</tsung>

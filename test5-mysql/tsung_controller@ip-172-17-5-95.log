@@ -1,0 +1,1593 @@
+
+=INFO REPORT==== 9-Aug-2017::05:12:38 ===
+    ts_config_server:(5:<0.70.0>) Config server started, logdir is "/root/.tsung/log/20170809-0512"
+ 
+=INFO REPORT==== 9-Aug-2017::05:12:38 ===
+              ts_mon:(5:<0.51.0>) starting monitor, global 
+
+=INFO REPORT==== 9-Aug-2017::05:12:38 ===
+           ts_config:(5:<0.70.0>) Reading config file: tsung_test.xml
+
+=INFO REPORT==== 9-Aug-2017::05:12:38 ===
+      ts_user_server:(5:<0.85.0>) Reset offline and online lists (maxid=2000)
+
+=INFO REPORT==== 9-Aug-2017::05:12:38 ===
+           ts_config:(5:<0.70.0>) Session name for id 1 is "jabber-example"
+
+=INFO REPORT==== 9-Aug-2017::05:12:38 ===
+    ts_config_server:(4:<0.70.0>) SYSINFO:Tsung version: 1.6.0
+
+=INFO REPORT==== 9-Aug-2017::05:12:38 ===
+    ts_config_server:(4:<0.70.0>) SYSINFO:Erlang version: Erlang/OTP 18 [erts-7.0] [source-4d83b58] [64-bit] [async-threads:8] [hipe] [kernel-poll:true]
+
+
+=INFO REPORT==== 9-Aug-2017::05:12:38 ===
+    ts_config_server:(4:<0.70.0>) SYSINFO:System architecture x86_64-unknown-linux-gnu
+
+=INFO REPORT==== 9-Aug-2017::05:12:38 ===
+    ts_config_server:(4:<0.70.0>) SYSINFO:Current path: /usr/lib/erlang/lib/tsung-1.6.0/ebin/tsung.beam
+
+=INFO REPORT==== 9-Aug-2017::05:12:38 ===
+              ts_mon:(5:<0.71.0>) Activate clients with text backend
+
+=INFO REPORT==== 9-Aug-2017::05:12:38 ===
+              ts_mon:(5:<0.71.0>) Starting tsung clients on hosts: [localhost]
+
+=INFO REPORT==== 9-Aug-2017::05:12:38 ===
+    ts_config_server:(5:<0.70.0>) Start a launcher on the controller beam localhost
+
+=INFO REPORT==== 9-Aug-2017::05:12:38 ===
+  ts_launcher_static:(5:<0.127.0>) Launch msg receive ("localhost")
+
+=INFO REPORT==== 9-Aug-2017::05:12:38 ===
+         ts_launcher:(5:<0.128.0>) Launch msg receive ("localhost")
+
+=INFO REPORT==== 9-Aug-2017::05:12:38 ===
+    ts_config_server:(5:<0.70.0>) All remote beams started, syncing 
+
+=INFO REPORT==== 9-Aug-2017::05:12:38 ===
+    ts_config_server:(5:<0.70.0>) Undefined ports_range config 
+
+=INFO REPORT==== 9-Aug-2017::05:12:38 ===
+    ts_config_server:(5:<0.70.0>) New arrival phase 1 for client "localhost" (last ? true): will start 100 users
+
+=INFO REPORT==== 9-Aug-2017::05:12:38 ===
+         ts_launcher:(5:<0.128.0>) Expected duration of first phase: 60.0 sec (100 users) 
+
+=INFO REPORT==== 9-Aug-2017::05:12:38 ===
+         ts_launcher:(5:<0.128.0>) Activate launcher (100 users) in 3108 msec 
+
+=INFO REPORT==== 9-Aug-2017::05:12:39 ===
+    ts_os_mon_erlang:(5:<0.91.0>) Starting os_mon beam on host "ejabberd_aws" 
+
+=INFO REPORT==== 9-Aug-2017::05:12:39 ===
+    ts_os_mon_erlang:(5:<0.91.0>) Loading tsung monitor on nodes [os_mon@ejabberd_aws]
+
+=INFO REPORT==== 9-Aug-2017::05:12:41 ===
+           ts_client:(5:<0.144.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:12:41 ===
+           ts_client:(5:<0.144.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=ERROR REPORT==== 9-Aug-2017::05:12:41 ===
+** Generic server <0.91.0> terminating 
+** Last message in was {'EXIT',<9249.64.0>,
+                           {killed,
+                               {gen_server,call,
+                                   [cpu_sup,{"u",false,false},infinity]}}}
+** When Server state == {state,{global,ts_mon},
+                               10000,os_mon@ejabberd_aws,"ejabberd_aws",
+                               <9249.64.0>,[]}
+** Reason for termination == 
+** {function_clause,
+       [{ts_os_mon_erlang,handle_info,
+            [{'EXIT',<9249.64.0>,
+                 {killed,
+                     {gen_server,call,[cpu_sup,{"u",false,false},infinity]}}},
+             {state,
+                 {global,ts_mon},
+                 10000,os_mon@ejabberd_aws,"ejabberd_aws",<9249.64.0>,[]}],
+            [{file,"src/tsung_controller/ts_os_mon_erlang.erl"},{line,120}]},
+        {gen_server,try_dispatch,4,[{file,"gen_server.erl"},{line,615}]},
+        {gen_server,handle_msg,5,[{file,"gen_server.erl"},{line,681}]},
+        {proc_lib,init_p_do_apply,3,[{file,"proc_lib.erl"},{line,239}]}]}
+
+=INFO REPORT==== 9-Aug-2017::05:12:42 ===
+           ts_client:(5:<0.146.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:12:42 ===
+           ts_client:(5:<0.146.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:12:42 ===
+           ts_client:(5:<0.147.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:12:42 ===
+           ts_client:(5:<0.147.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:12:42 ===
+    ts_os_mon_erlang:(5:<0.145.0>) Starting os_mon beam on host "ejabberd_aws" 
+
+=INFO REPORT==== 9-Aug-2017::05:12:42 ===
+    ts_os_mon_erlang:(5:<0.145.0>) Node os_mon@ejabberd_aws is already running, start updatestats process
+
+=WARNING REPORT==== 9-Aug-2017::05:12:42 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:12:42 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=INFO REPORT==== 9-Aug-2017::05:12:43 ===
+           ts_client:(5:<0.148.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:12:43 ===
+           ts_client:(5:<0.148.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:12:45 ===
+           ts_client:(5:<0.149.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:12:45 ===
+           ts_client:(5:<0.149.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:12:45 ===
+           ts_client:(5:<0.150.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:12:45 ===
+           ts_client:(5:<0.150.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:12:45 ===
+           ts_client:(5:<0.151.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:12:45 ===
+           ts_client:(5:<0.151.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:12:47 ===
+           ts_client:(5:<0.152.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:12:47 ===
+           ts_client:(5:<0.152.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:12:49 ===
+           ts_client:(5:<0.155.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:12:49 ===
+           ts_client:(5:<0.155.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:12:50 ===
+           ts_client:(5:<0.156.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:12:50 ===
+           ts_client:(5:<0.156.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:12:50 ===
+           ts_client:(5:<0.157.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:12:50 ===
+           ts_client:(5:<0.157.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:12:51 ===
+           ts_client:(5:<0.158.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:12:51 ===
+           ts_client:(5:<0.158.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:12:51 ===
+           ts_client:(5:<0.159.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:12:51 ===
+           ts_client:(5:<0.159.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=WARNING REPORT==== 9-Aug-2017::05:12:52 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:12:52 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=INFO REPORT==== 9-Aug-2017::05:12:54 ===
+           ts_client:(5:<0.160.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:12:54 ===
+           ts_client:(5:<0.160.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:12:55 ===
+           ts_client:(5:<0.161.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:12:55 ===
+           ts_client:(5:<0.161.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:12:55 ===
+           ts_client:(5:<0.162.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:12:55 ===
+           ts_client:(5:<0.162.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:12:56 ===
+           ts_client:(5:<0.163.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:12:56 ===
+           ts_client:(5:<0.163.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:12:56 ===
+           ts_client:(5:<0.164.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:12:56 ===
+           ts_client:(5:<0.164.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:12:56 ===
+           ts_client:(5:<0.165.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:12:56 ===
+           ts_client:(5:<0.165.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:12:57 ===
+           ts_client:(5:<0.166.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:12:57 ===
+           ts_client:(5:<0.166.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:12:58 ===
+           ts_client:(5:<0.169.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:12:58 ===
+           ts_client:(5:<0.169.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:12:58 ===
+           ts_client:(5:<0.170.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:12:58 ===
+           ts_client:(5:<0.170.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:00 ===
+           ts_client:(5:<0.171.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:00 ===
+           ts_client:(5:<0.171.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:00 ===
+           ts_client:(5:<0.172.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:00 ===
+           ts_client:(5:<0.172.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:01 ===
+           ts_client:(5:<0.173.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:01 ===
+           ts_client:(5:<0.173.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=WARNING REPORT==== 9-Aug-2017::05:13:02 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:13:02 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=INFO REPORT==== 9-Aug-2017::05:13:02 ===
+           ts_client:(5:<0.174.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:02 ===
+           ts_client:(5:<0.174.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:03 ===
+           ts_client:(5:<0.175.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:03 ===
+           ts_client:(5:<0.175.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:03 ===
+           ts_client:(5:<0.176.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:04 ===
+           ts_client:(5:<0.177.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:04 ===
+           ts_client:(5:<0.177.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:04 ===
+           ts_client:(5:<0.178.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:04 ===
+           ts_client:(5:<0.178.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:05 ===
+           ts_client:(5:<0.179.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:05 ===
+           ts_client:(5:<0.179.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:05 ===
+           ts_client:(5:<0.180.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:05 ===
+           ts_client:(5:<0.180.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:07 ===
+           ts_client:(5:<0.181.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:07 ===
+           ts_client:(5:<0.181.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:07 ===
+           ts_client:(5:<0.182.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:07 ===
+           ts_client:(5:<0.182.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:09 ===
+           ts_client:(5:<0.185.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:09 ===
+           ts_client:(5:<0.185.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:11 ===
+           ts_client:(5:<0.186.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:11 ===
+           ts_client:(5:<0.186.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:11 ===
+           ts_client:(5:<0.187.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:11 ===
+           ts_client:(5:<0.187.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:12 ===
+           ts_client:(5:<0.188.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:12 ===
+           ts_client:(5:<0.188.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:12 ===
+           ts_client:(5:<0.189.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:12 ===
+           ts_client:(5:<0.189.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:12 ===
+           ts_client:(5:<0.190.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:12 ===
+           ts_client:(5:<0.190.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=WARNING REPORT==== 9-Aug-2017::05:13:12 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:13:12 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=INFO REPORT==== 9-Aug-2017::05:13:14 ===
+           ts_client:(5:<0.191.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:14 ===
+           ts_client:(5:<0.191.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:14 ===
+           ts_client:(5:<0.192.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:14 ===
+           ts_client:(5:<0.192.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:14 ===
+           ts_client:(5:<0.193.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:14 ===
+           ts_client:(5:<0.193.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:16 ===
+           ts_client:(5:<0.194.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:16 ===
+           ts_client:(5:<0.194.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:16 ===
+           ts_client:(5:<0.195.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:16 ===
+           ts_client:(5:<0.195.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:16 ===
+           ts_client:(5:<0.196.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:16 ===
+           ts_client:(5:<0.196.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:17 ===
+           ts_client:(5:<0.197.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:17 ===
+           ts_client:(5:<0.197.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:17 ===
+           ts_client:(5:<0.198.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:17 ===
+           ts_client:(5:<0.198.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:18 ===
+           ts_client:(5:<0.199.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:18 ===
+           ts_client:(5:<0.199.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:18 ===
+           ts_client:(5:<0.200.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:18 ===
+           ts_client:(5:<0.200.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:18 ===
+           ts_client:(5:<0.203.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:18 ===
+           ts_client:(5:<0.203.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:18 ===
+           ts_client:(5:<0.204.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:18 ===
+           ts_client:(5:<0.204.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:19 ===
+           ts_client:(5:<0.205.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:19 ===
+           ts_client:(5:<0.205.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:20 ===
+           ts_client:(5:<0.206.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:20 ===
+           ts_client:(5:<0.206.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:21 ===
+           ts_client:(5:<0.207.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:21 ===
+           ts_client:(5:<0.207.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:22 ===
+           ts_client:(5:<0.208.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:22 ===
+           ts_client:(5:<0.208.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:22 ===
+           ts_client:(5:<0.209.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:22 ===
+           ts_client:(5:<0.209.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=WARNING REPORT==== 9-Aug-2017::05:13:22 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:13:22 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=INFO REPORT==== 9-Aug-2017::05:13:23 ===
+           ts_client:(5:<0.210.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:23 ===
+           ts_client:(5:<0.210.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:23 ===
+           ts_client:(5:<0.211.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:23 ===
+           ts_client:(5:<0.211.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:23 ===
+           ts_client:(5:<0.212.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:23 ===
+           ts_client:(5:<0.212.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:23 ===
+           ts_client:(5:<0.213.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:23 ===
+           ts_client:(5:<0.213.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:24 ===
+           ts_client:(5:<0.214.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:24 ===
+           ts_client:(5:<0.214.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:25 ===
+           ts_client:(5:<0.215.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:25 ===
+           ts_client:(5:<0.215.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:25 ===
+           ts_client:(5:<0.216.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:25 ===
+           ts_client:(5:<0.216.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:26 ===
+           ts_client:(5:<0.217.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:26 ===
+           ts_client:(5:<0.217.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:26 ===
+           ts_client:(5:<0.218.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:26 ===
+           ts_client:(5:<0.218.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:26 ===
+           ts_client:(5:<0.219.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:26 ===
+           ts_client:(5:<0.219.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:27 ===
+           ts_client:(5:<0.220.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:27 ===
+           ts_client:(5:<0.220.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:28 ===
+           ts_client:(5:<0.221.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:28 ===
+           ts_client:(5:<0.221.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:29 ===
+           ts_client:(5:<0.224.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:29 ===
+           ts_client:(5:<0.224.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:29 ===
+           ts_client:(5:<0.225.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:29 ===
+           ts_client:(5:<0.225.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:30 ===
+           ts_client:(5:<0.226.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:30 ===
+           ts_client:(5:<0.226.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:30 ===
+           ts_client:(5:<0.227.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:30 ===
+           ts_client:(5:<0.227.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:30 ===
+           ts_client:(5:<0.228.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:30 ===
+           ts_client:(5:<0.228.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:31 ===
+           ts_client:(5:<0.229.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:31 ===
+           ts_client:(5:<0.229.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:32 ===
+           ts_client:(5:<0.230.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:32 ===
+           ts_client:(5:<0.230.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:32 ===
+           ts_client:(5:<0.231.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:32 ===
+           ts_client:(5:<0.231.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=WARNING REPORT==== 9-Aug-2017::05:13:32 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:13:32 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=INFO REPORT==== 9-Aug-2017::05:13:32 ===
+           ts_client:(5:<0.232.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:32 ===
+           ts_client:(5:<0.232.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:34 ===
+           ts_client:(5:<0.233.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:34 ===
+           ts_client:(5:<0.233.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:36 ===
+           ts_client:(5:<0.234.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:36 ===
+           ts_client:(5:<0.234.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:36 ===
+           ts_client:(5:<0.235.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:36 ===
+           ts_client:(5:<0.235.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:38 ===
+           ts_client:(5:<0.236.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:38 ===
+           ts_client:(5:<0.236.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:38 ===
+           ts_client:(5:<0.237.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:38 ===
+           ts_client:(5:<0.237.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:38 ===
+           ts_client:(5:<0.240.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:38 ===
+           ts_client:(5:<0.240.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:40 ===
+           ts_client:(5:<0.241.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:40 ===
+           ts_client:(5:<0.241.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:40 ===
+           ts_client:(5:<0.242.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:40 ===
+           ts_client:(5:<0.242.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:40 ===
+           ts_client:(5:<0.243.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:40 ===
+           ts_client:(5:<0.243.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:41 ===
+           ts_client:(5:<0.244.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:41 ===
+           ts_client:(5:<0.244.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:42 ===
+         ts_launcher:(5:<0.128.0>) Phase duration exceeded, but not all users were launched (11 users, 11.0% of phase)
+
+=INFO REPORT==== 9-Aug-2017::05:13:42 ===
+         ts_launcher:(5:<0.128.0>) This was the last phase, wait for connected users to finish their session
+
+=INFO REPORT==== 9-Aug-2017::05:13:42 ===
+           ts_client:(5:<0.245.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::05:13:42 ===
+           ts_client:(5:<0.245.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=WARNING REPORT==== 9-Aug-2017::05:13:42 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:13:42 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:13:52 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:13:52 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:14:02 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:14:02 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:14:12 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:14:12 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:14:22 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:14:22 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:14:32 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:14:32 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:14:42 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:14:42 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:14:52 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:14:52 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:15:02 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:15:02 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:15:12 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:15:12 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:15:22 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:15:22 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:15:32 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:15:32 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:15:42 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:15:42 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:15:52 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:15:52 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:16:02 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:16:02 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:16:12 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:16:12 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:16:22 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:16:22 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:16:32 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:16:32 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:16:42 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:16:42 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:16:53 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:16:53 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:17:03 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:17:03 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:17:13 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:17:13 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:17:23 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:17:23 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:17:33 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:17:33 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:17:43 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:17:43 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:17:53 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:17:53 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:18:03 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:18:03 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:18:13 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:18:13 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:18:23 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:18:23 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:18:33 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:18:33 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:18:43 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:18:43 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:18:53 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:18:53 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:19:03 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:19:03 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:19:13 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:19:13 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:19:23 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:19:23 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:19:33 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:19:33 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:19:43 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:19:43 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:19:53 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:19:53 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:20:03 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:20:03 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:20:13 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:20:13 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:20:23 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:20:23 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:20:33 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:20:33 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:20:43 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:20:43 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:20:53 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:20:53 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:21:03 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:21:03 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:21:13 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:21:13 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:21:23 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:21:23 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:21:33 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:21:33 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:21:43 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:21:43 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:21:53 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:21:53 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:22:03 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:22:03 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=INFO REPORT==== 9-Aug-2017::05:22:08 ===
+           ts_jabber:(4:<0.144.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:08 ===
+           ts_search:(5:<0.144.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:09 ===
+           ts_jabber:(4:<0.146.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:09 ===
+           ts_search:(5:<0.146.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:09 ===
+           ts_jabber:(4:<0.147.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:09 ===
+           ts_search:(5:<0.147.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:10 ===
+           ts_jabber:(4:<0.148.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:10 ===
+           ts_search:(5:<0.148.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:12 ===
+           ts_jabber:(4:<0.149.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:12 ===
+           ts_search:(5:<0.149.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:12 ===
+           ts_jabber:(4:<0.150.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:12 ===
+           ts_search:(5:<0.150.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:12 ===
+           ts_jabber:(4:<0.151.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:12 ===
+           ts_search:(5:<0.151.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=WARNING REPORT==== 9-Aug-2017::05:22:13 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:22:13 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=INFO REPORT==== 9-Aug-2017::05:22:14 ===
+           ts_jabber:(4:<0.152.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:14 ===
+           ts_search:(5:<0.152.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:16 ===
+           ts_jabber:(4:<0.155.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:16 ===
+           ts_search:(5:<0.155.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:17 ===
+           ts_jabber:(4:<0.156.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:17 ===
+           ts_search:(5:<0.156.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:17 ===
+           ts_jabber:(4:<0.157.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:17 ===
+           ts_search:(5:<0.157.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:18 ===
+           ts_jabber:(4:<0.158.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:18 ===
+           ts_search:(5:<0.158.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:18 ===
+           ts_jabber:(4:<0.159.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:18 ===
+           ts_search:(5:<0.159.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:21 ===
+           ts_jabber:(4:<0.160.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:21 ===
+           ts_search:(5:<0.160.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:22 ===
+           ts_jabber:(4:<0.161.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:22 ===
+           ts_search:(5:<0.161.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:22 ===
+           ts_jabber:(4:<0.162.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:22 ===
+           ts_search:(5:<0.162.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=WARNING REPORT==== 9-Aug-2017::05:22:23 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:22:23 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=INFO REPORT==== 9-Aug-2017::05:22:23 ===
+           ts_jabber:(4:<0.163.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:23 ===
+           ts_search:(5:<0.163.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:23 ===
+           ts_jabber:(4:<0.164.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:23 ===
+           ts_search:(5:<0.164.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:23 ===
+           ts_jabber:(4:<0.165.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:23 ===
+           ts_search:(5:<0.165.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:24 ===
+           ts_jabber:(4:<0.166.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:24 ===
+           ts_search:(5:<0.166.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:25 ===
+           ts_jabber:(4:<0.169.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:25 ===
+           ts_search:(5:<0.169.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:25 ===
+           ts_jabber:(4:<0.170.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:25 ===
+           ts_search:(5:<0.170.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:27 ===
+           ts_jabber:(4:<0.171.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:27 ===
+           ts_search:(5:<0.171.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:28 ===
+           ts_jabber:(4:<0.172.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:28 ===
+           ts_search:(5:<0.172.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:28 ===
+           ts_jabber:(4:<0.173.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:28 ===
+           ts_search:(5:<0.173.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:29 ===
+           ts_jabber:(4:<0.174.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:29 ===
+           ts_search:(5:<0.174.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:30 ===
+           ts_jabber:(4:<0.175.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:30 ===
+           ts_search:(5:<0.175.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:30 ===
+           ts_jabber:(4:<0.176.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:30 ===
+           ts_search:(5:<0.176.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:31 ===
+           ts_jabber:(4:<0.177.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:31 ===
+           ts_search:(5:<0.177.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:31 ===
+           ts_jabber:(4:<0.178.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:31 ===
+           ts_search:(5:<0.178.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:32 ===
+           ts_jabber:(4:<0.179.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:32 ===
+           ts_search:(5:<0.179.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:32 ===
+           ts_jabber:(4:<0.180.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:32 ===
+           ts_search:(5:<0.180.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=WARNING REPORT==== 9-Aug-2017::05:22:33 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:22:33 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=INFO REPORT==== 9-Aug-2017::05:22:34 ===
+           ts_jabber:(4:<0.181.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:34 ===
+           ts_search:(5:<0.181.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:34 ===
+           ts_jabber:(4:<0.182.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:34 ===
+           ts_search:(5:<0.182.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:36 ===
+           ts_jabber:(4:<0.185.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:36 ===
+           ts_search:(5:<0.185.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:38 ===
+           ts_jabber:(4:<0.186.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:38 ===
+           ts_search:(5:<0.186.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:38 ===
+           ts_jabber:(4:<0.187.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:38 ===
+           ts_search:(5:<0.187.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:39 ===
+           ts_jabber:(4:<0.188.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:39 ===
+           ts_search:(5:<0.188.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:39 ===
+           ts_jabber:(4:<0.189.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:39 ===
+           ts_search:(5:<0.189.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:39 ===
+           ts_jabber:(4:<0.190.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:39 ===
+           ts_search:(5:<0.190.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:41 ===
+           ts_jabber:(4:<0.191.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:41 ===
+           ts_search:(5:<0.191.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:41 ===
+           ts_jabber:(4:<0.192.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:41 ===
+           ts_search:(5:<0.192.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:41 ===
+           ts_jabber:(4:<0.193.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:41 ===
+           ts_search:(5:<0.193.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:43 ===
+           ts_jabber:(4:<0.194.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:43 ===
+           ts_search:(5:<0.194.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=WARNING REPORT==== 9-Aug-2017::05:22:43 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:22:43 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=INFO REPORT==== 9-Aug-2017::05:22:43 ===
+           ts_jabber:(4:<0.195.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:43 ===
+           ts_search:(5:<0.195.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:43 ===
+           ts_jabber:(4:<0.196.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:43 ===
+           ts_search:(5:<0.196.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:44 ===
+           ts_jabber:(4:<0.197.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:44 ===
+           ts_search:(5:<0.197.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:45 ===
+           ts_jabber:(4:<0.198.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:45 ===
+           ts_search:(5:<0.198.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:45 ===
+           ts_jabber:(4:<0.199.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:45 ===
+           ts_search:(5:<0.199.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:45 ===
+           ts_jabber:(4:<0.200.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:45 ===
+           ts_search:(5:<0.200.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:46 ===
+           ts_jabber:(4:<0.203.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:46 ===
+           ts_search:(5:<0.203.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:46 ===
+           ts_jabber:(4:<0.204.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:46 ===
+           ts_search:(5:<0.204.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:46 ===
+           ts_jabber:(4:<0.205.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:46 ===
+           ts_search:(5:<0.205.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:47 ===
+           ts_jabber:(4:<0.206.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:47 ===
+           ts_search:(5:<0.206.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:48 ===
+           ts_jabber:(4:<0.207.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:48 ===
+           ts_search:(5:<0.207.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:49 ===
+           ts_jabber:(4:<0.208.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:49 ===
+           ts_search:(5:<0.208.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:49 ===
+           ts_jabber:(4:<0.209.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:49 ===
+           ts_search:(5:<0.209.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:50 ===
+           ts_jabber:(4:<0.210.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:50 ===
+           ts_search:(5:<0.210.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:50 ===
+           ts_jabber:(4:<0.211.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:50 ===
+           ts_search:(5:<0.211.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:50 ===
+           ts_jabber:(4:<0.212.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:50 ===
+           ts_search:(5:<0.212.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:50 ===
+           ts_jabber:(4:<0.213.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:50 ===
+           ts_search:(5:<0.213.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:51 ===
+           ts_jabber:(4:<0.214.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:51 ===
+           ts_search:(5:<0.214.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:52 ===
+           ts_jabber:(4:<0.215.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:52 ===
+           ts_search:(5:<0.215.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:52 ===
+           ts_jabber:(4:<0.216.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:52 ===
+           ts_search:(5:<0.216.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=WARNING REPORT==== 9-Aug-2017::05:22:53 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:22:53 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=INFO REPORT==== 9-Aug-2017::05:22:53 ===
+           ts_jabber:(4:<0.217.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:53 ===
+           ts_search:(5:<0.217.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:53 ===
+           ts_jabber:(4:<0.218.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:53 ===
+           ts_search:(5:<0.218.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:54 ===
+           ts_jabber:(4:<0.219.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:54 ===
+           ts_search:(5:<0.219.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:54 ===
+           ts_jabber:(4:<0.220.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:54 ===
+           ts_search:(5:<0.220.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:55 ===
+           ts_jabber:(4:<0.221.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:55 ===
+           ts_search:(5:<0.221.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:56 ===
+           ts_jabber:(4:<0.224.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:56 ===
+           ts_search:(5:<0.224.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:56 ===
+           ts_jabber:(4:<0.225.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:56 ===
+           ts_search:(5:<0.225.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:57 ===
+           ts_jabber:(4:<0.226.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:57 ===
+           ts_search:(5:<0.226.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:57 ===
+           ts_jabber:(4:<0.227.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:57 ===
+           ts_search:(5:<0.227.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:57 ===
+           ts_jabber:(4:<0.228.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:57 ===
+           ts_search:(5:<0.228.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:58 ===
+           ts_jabber:(4:<0.229.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:58 ===
+           ts_search:(5:<0.229.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:59 ===
+           ts_jabber:(4:<0.230.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:59 ===
+           ts_search:(5:<0.230.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:59 ===
+           ts_jabber:(4:<0.231.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:59 ===
+           ts_search:(5:<0.231.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:22:59 ===
+           ts_jabber:(4:<0.232.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:22:59 ===
+           ts_search:(5:<0.232.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:23:02 ===
+           ts_jabber:(4:<0.233.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:23:02 ===
+           ts_search:(5:<0.233.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=WARNING REPORT==== 9-Aug-2017::05:23:03 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:23:03 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=INFO REPORT==== 9-Aug-2017::05:23:03 ===
+           ts_jabber:(4:<0.234.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:23:03 ===
+           ts_search:(5:<0.234.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:23:03 ===
+           ts_jabber:(4:<0.235.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:23:03 ===
+           ts_search:(5:<0.235.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:23:05 ===
+           ts_jabber:(4:<0.236.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:23:05 ===
+           ts_search:(5:<0.236.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:23:05 ===
+           ts_jabber:(4:<0.237.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:23:05 ===
+           ts_search:(5:<0.237.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:23:05 ===
+           ts_jabber:(4:<0.240.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:23:05 ===
+           ts_search:(5:<0.240.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:23:07 ===
+           ts_jabber:(4:<0.241.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:23:07 ===
+           ts_search:(5:<0.241.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:23:07 ===
+           ts_jabber:(4:<0.242.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:23:07 ===
+           ts_search:(5:<0.242.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:23:07 ===
+           ts_jabber:(4:<0.243.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:23:07 ===
+           ts_search:(5:<0.243.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:23:08 ===
+           ts_jabber:(4:<0.244.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:23:08 ===
+           ts_search:(5:<0.244.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::05:23:09 ===
+           ts_jabber:(4:<0.245.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::05:23:09 ===
+           ts_search:(5:<0.245.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=WARNING REPORT==== 9-Aug-2017::05:23:13 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=WARNING REPORT==== 9-Aug-2017::05:23:13 ===
+OS_MON (cpu_sup) called by <9249.76.0>, not started
+** at node os_mon@ejabberd_aws **
+
+=INFO REPORT==== 9-Aug-2017::05:23:17 ===
+     ts_launcher_mgr:(5:<0.122.0>) No more active users 'tsung_controller@ip-172-17-5-95' "9061"
+
+=INFO REPORT==== 9-Aug-2017::05:23:17 ===
+              ts_mon:(5:<0.71.0>) stopping monitor (normal)
