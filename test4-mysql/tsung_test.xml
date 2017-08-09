@@ -9,7 +9,8 @@
  </servers>
 
 <monitoring>
-  <monitor host="ejabberd_aws" type="erlang"/></monitoring>
+  <monitor host="ejabberd_aws" type="munin"/>
+</monitoring>
 
 <load>
    <arrivalphase phase="1" duration="1" unit="minute">
@@ -54,7 +55,7 @@
         <setdynvars sourcetype="value" value="">
           <var name="after_elem"/>
         </setdynvars>
-        <repeat name="paginating_forward" max_repeat="10">
+        <repeat name="paginating_forward" max_repeat="100">
           <request subst="true" tag="paging">
             <dyn_variable name="last_message_id" re="&lt;last>(.*)&lt;/last>"/>
             <jabber type="raw" ack="parse" regexp="&lt;/iq>" data="&lt;![CDATA[                   &lt;iq type='get'>                     &lt;query xmlns='urn:xmpp:mam:tmp'>                       &lt;set xmlns='http://jabber.org/protocol/rsm'>                          &lt;max>1&lt;/max>                          %%_after_elem%%                       &lt;/set>                     &lt;/query>                   &lt;/iq>                 ]]>">
