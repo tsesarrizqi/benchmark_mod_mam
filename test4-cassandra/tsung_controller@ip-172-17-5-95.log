@@ -1,0 +1,183 @@
+
+=INFO REPORT==== 9-Aug-2017::08:58:19 ===
+    ts_config_server:(5:<0.70.0>) Config server started, logdir is "/root/.tsung/log/20170809-0858"
+ 
+=INFO REPORT==== 9-Aug-2017::08:58:19 ===
+              ts_mon:(5:<0.51.0>) starting monitor, global 
+
+=INFO REPORT==== 9-Aug-2017::08:58:19 ===
+           ts_config:(5:<0.70.0>) Reading config file: tsung_test.xml
+
+=INFO REPORT==== 9-Aug-2017::08:58:19 ===
+      ts_user_server:(5:<0.85.0>) Reset offline and online lists (maxid=2000)
+
+=INFO REPORT==== 9-Aug-2017::08:58:19 ===
+           ts_config:(5:<0.70.0>) Session name for id 1 is "jabber-example"
+
+=INFO REPORT==== 9-Aug-2017::08:58:19 ===
+    ts_config_server:(4:<0.70.0>) SYSINFO:Tsung version: 1.6.0
+
+=INFO REPORT==== 9-Aug-2017::08:58:19 ===
+    ts_config_server:(4:<0.70.0>) SYSINFO:Erlang version: Erlang/OTP 18 [erts-7.0] [source-4d83b58] [64-bit] [async-threads:8] [hipe] [kernel-poll:true]
+
+
+=INFO REPORT==== 9-Aug-2017::08:58:19 ===
+    ts_config_server:(4:<0.70.0>) SYSINFO:System architecture x86_64-unknown-linux-gnu
+
+=INFO REPORT==== 9-Aug-2017::08:58:19 ===
+    ts_config_server:(4:<0.70.0>) SYSINFO:Current path: /usr/lib/erlang/lib/tsung-1.6.0/ebin/tsung.beam
+
+=INFO REPORT==== 9-Aug-2017::08:58:19 ===
+     ts_os_mon_munin:(5:<0.87.0>) starting os_mon_munin with args {"ejabberd_aws",
+                                                                   {4949},
+                                                                   10000,
+                                                                   {global,
+                                                                    ts_mon}}
+=INFO REPORT==== 9-Aug-2017::08:58:19 ===
+              ts_mon:(5:<0.71.0>) Activate clients with text backend
+
+=INFO REPORT==== 9-Aug-2017::08:58:19 ===
+              ts_mon:(5:<0.71.0>) Starting tsung clients on hosts: [localhost]
+
+=INFO REPORT==== 9-Aug-2017::08:58:19 ===
+    ts_config_server:(5:<0.70.0>) Start a launcher on the controller beam localhost
+
+=INFO REPORT==== 9-Aug-2017::08:58:19 ===
+  ts_launcher_static:(5:<0.129.0>) Launch msg receive ("localhost")
+
+=INFO REPORT==== 9-Aug-2017::08:58:19 ===
+         ts_launcher:(5:<0.130.0>) Launch msg receive ("localhost")
+
+=INFO REPORT==== 9-Aug-2017::08:58:19 ===
+    ts_config_server:(5:<0.70.0>) All remote beams started, syncing 
+
+=INFO REPORT==== 9-Aug-2017::08:58:19 ===
+    ts_config_server:(5:<0.70.0>) Undefined ports_range config 
+
+=INFO REPORT==== 9-Aug-2017::08:58:19 ===
+    ts_config_server:(5:<0.70.0>) New arrival phase 1 for client "localhost" (last ? true): will start 10 users
+
+=INFO REPORT==== 9-Aug-2017::08:58:19 ===
+         ts_launcher:(5:<0.130.0>) Expected duration of first phase: 60.0 sec (10 users) 
+
+=INFO REPORT==== 9-Aug-2017::08:58:19 ===
+         ts_launcher:(5:<0.130.0>) Activate launcher (10 users) in 5399 msec 
+
+=INFO REPORT==== 9-Aug-2017::08:58:24 ===
+           ts_client:(5:<0.134.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::08:58:24 ===
+           ts_client:(5:<0.134.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::08:58:27 ===
+           ts_client:(5:<0.135.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::08:58:27 ===
+           ts_client:(5:<0.135.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::08:58:32 ===
+           ts_client:(5:<0.138.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::08:58:32 ===
+           ts_client:(5:<0.138.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::08:58:41 ===
+           ts_client:(5:<0.141.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::08:58:41 ===
+           ts_client:(5:<0.141.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::08:58:44 ===
+           ts_client:(5:<0.142.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::08:58:44 ===
+           ts_client:(5:<0.142.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::08:58:47 ===
+           ts_client:(5:<0.143.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::08:58:47 ===
+           ts_client:(5:<0.143.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::08:58:51 ===
+           ts_client:(5:<0.146.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::08:58:51 ===
+           ts_client:(5:<0.146.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::08:58:58 ===
+           ts_client:(5:<0.147.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::08:58:58 ===
+           ts_client:(5:<0.147.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::08:59:05 ===
+           ts_client:(5:<0.150.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::08:59:05 ===
+           ts_client:(5:<0.150.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::08:59:13 ===
+         ts_launcher:(5:<0.130.0>) This was the last phase, wait for connected users to finish their session
+
+=INFO REPORT==== 9-Aug-2017::08:59:13 ===
+           ts_client:(5:<0.153.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::08:59:13 ===
+           ts_client:(5:<0.153.0>) Data receive from socket in state think, ack=no_ack, skip
+
+=INFO REPORT==== 9-Aug-2017::09:07:52 ===
+           ts_jabber:(4:<0.134.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::09:07:52 ===
+           ts_search:(5:<0.134.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::09:07:54 ===
+           ts_jabber:(4:<0.135.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::09:07:54 ===
+           ts_search:(5:<0.135.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::09:07:59 ===
+           ts_jabber:(4:<0.138.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::09:07:59 ===
+           ts_search:(5:<0.138.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::09:08:08 ===
+           ts_jabber:(4:<0.141.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::09:08:08 ===
+           ts_search:(5:<0.141.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::09:08:11 ===
+           ts_jabber:(4:<0.142.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::09:08:11 ===
+           ts_search:(5:<0.142.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::09:08:14 ===
+           ts_jabber:(4:<0.143.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::09:08:14 ===
+           ts_search:(5:<0.143.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::09:08:19 ===
+           ts_jabber:(4:<0.146.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::09:08:19 ===
+           ts_search:(5:<0.146.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::09:08:25 ===
+           ts_jabber:(4:<0.147.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::09:08:25 ===
+           ts_search:(5:<0.147.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::09:08:32 ===
+           ts_jabber:(4:<0.150.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::09:08:32 ===
+           ts_search:(5:<0.150.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::09:08:40 ===
+           ts_jabber:(4:<0.153.0>) XMPP connection closed by server!
+=INFO REPORT==== 9-Aug-2017::09:08:40 ===
+           ts_search:(5:<0.153.0>) Dyn Var (RE): no Match (varname=last_message_id), 
+
+=INFO REPORT==== 9-Aug-2017::09:08:48 ===
+     ts_launcher_mgr:(5:<0.124.0>) No more active users 'tsung_controller@ip-172-17-5-95' "15558"
+
+=INFO REPORT==== 9-Aug-2017::09:08:48 ===
+              ts_mon:(5:<0.71.0>) stopping monitor (normal)
