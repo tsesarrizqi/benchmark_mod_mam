@@ -10,3 +10,4 @@
        <br>then run `$/usr/lib/tsung/bin/tsung_stats.pl` (some dependencies might be needed)
 - Generate plot for comparing test results: 
       <br>`$tsplot -c conf.conf -v "Test1" test1dir/tsung.log "Test2" test2dir/tsung.log -d outputdir` (some dependencies might be needed)
+- To use your own test scenario, modify the .xml file
